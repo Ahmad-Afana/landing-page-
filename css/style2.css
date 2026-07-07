@@ -1,7 +1,7 @@
 .all{
-    margin-top: 70px;
-    margin-left:300px;
-    height: 3000px;
+    width: 1000px;
+    margin: 30px auto 0;
+    height: 1000px;
 }
 
 .h1-all{
@@ -22,21 +22,21 @@
 }
 
 .input-email{
-    background-color: #e7e7e7;
+    background-color: #e8f6f8;
     width:250px;
     height: 25px;
-    border-radius:7px;
-    border:rgb(188, 188, 188) solid 0.5px;
+    border-radius:10px;
+    border: gainsboro solid 1.6px;
     margin-top: 3px;
     margin-bottom: 20px;
 }
 
 .input-password{
-     background-color: #e7e7e7;
+     background-color: #e8f6f8;
     width:250px;
     height: 25px;
-    border-radius:7px;
-    border:rgb(188, 188, 188) solid 0.5px;
+    border-radius:10px;
+    border: gainsboro solid 1.6px;
     margin-bottom: 10px;   
 }
 
@@ -47,7 +47,7 @@
 }
 
 .a-in-input:hover{
-    color: #616060;
+    color: #000000;
 }
 
 .button1{
@@ -55,7 +55,7 @@
     color: #ffffff;
     border-radius:9px;
     border: solid 1px;
-    height:35px;
+    height:45px !important;
     width:250px;
     margin-top: 10px;
 }
@@ -78,13 +78,23 @@
     margin-left:7px;
 }
 
+.button-2-and-3{
+    margin-top: 20px;
+}
+
+
 .button2{
-    background-color:#91a3a798;
-    border-radius: 9px;
-    border: solid 0px;
-    width: 260px;
-    height: 35px;
+    background-color:#e8f6f8;
+    border-radius: 15px;
+    border: solid 0;
+    width: 180px;
+    height: 45px;
     margin-bottom:10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .button2:hover{
@@ -92,27 +102,30 @@
     color: #ffffff;
 }
 
-#p-in-button2{
-    display: flex;
-    font-size:15px;
-    margin-top: -20px;
-    margin-left:70px;
+.google-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: -20px;
 }
 
-.google-img{
-    width: 20px;
-    height:20px;
-    border-radius: 50%;
-    margin-right: 150px;
+.p-in-button2{
+    font-size:20px;
+    color: #272727;
 }
 
 .button3{
-    background-color:#91a3a798;
-    border-radius: 9px;
-    border: solid 0px;
-    width: 260px;
-    height: 35px;
-    margin-bottom:30px; 
+    background-color:#e8f6f8;
+    border-radius: 15px;
+    border: solid 0;
+    width: 180px;
+    height: 45px;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .button3:hover{
@@ -121,19 +134,14 @@
 }
 
 .Facebook-img{
-     width: 40px;
-    height:40px;
-    display: flex;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin-top: -10px;
-    margin-left: 30px;
 }
 
 .p-in-button3{
-     display: flex;
-    font-size:15px;
-    margin-top: -27px;
-    margin-left:70px;
+    font-size: 20px;
+    margin-right:20px;
 }
 
 
@@ -152,11 +160,150 @@
 .div-img{
     background-image: url('../img/صورة\ الورد\ .jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: #616060;
     border-radius: 30px;
-    width: 535px;
-    height: 710px;
+    width: 55%;
+    height: 650px;
     float: right;
-    margin-top:-650px;
-    margin-right: 200px;
+    margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-box{
+    float: left;
+    width: 40%;
+}
+
+.mobile-text{
+    display: none;
+}
+
+.desktop-text{
+    display: none;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* Start Media Query */
+
+
+@media (max-width: 767px) { /* Small Screens */
+.all{
+    width: 100%;
+}
+
+.div-img{
+    float: none;
+    width:100%;
+    height: 250px;
+}
+
+.form-box{
+    width: 100%;
+}
+
+  .h1-all{
+    font-weight: bold;
+    margin-left: 5%;
+  }
+
+  .p1-all{
+    font-size:20px;
+    margin-left: 5%;
+  }
+
+  .label-inputs{
+    margin-left: 5%;
+
+  }
+
+  .inputs{
+    width:90%;
+    height: 40px;
+    margin-left: 5%;
+  }
+
+  .a-in-input{
+    float: right;
+    font-size:15px;
+    margin-right:4%;
+    
+  }
+
+  .button1{
+    height:40px;
+    width:90%;
+    margin-left:5%;
+
+  }
+
+  .p2{
+    font-size: larger;
+    margin-left:6%;
+  }
+
+   .desktop-text{
+        display: none;
+    }
+
+    .mobile-text{
+        display: block; 
+    }
+
+    .button2,
+    .button3{
+        float: left;
+        width: 48%;
+    }
+    
+    .button2{
+        margin-right: 4%;
+    }
+    
+    .div-p3{
+        text-align: center;
+        margin-top:75px;
+        font-size: 22px;
+    }
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) { /* Medium Screens */
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) { /* Large Screens */
+
+
+}
+
+
+@media (min-width: 1200px) { /* Extra Large Screens */
+
+    
+}
+
+/* End Media Query */
