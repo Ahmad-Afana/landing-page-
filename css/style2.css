@@ -24,7 +24,7 @@
 .input-email{
     background-color: #e8f6f8;
     width:250px;
-    height: 25px;
+    height: 35px;
     border-radius:10px;
     border: gainsboro solid 1.6px;
     margin-top: 3px;
@@ -34,7 +34,7 @@
 .input-password{
      background-color: #e8f6f8;
     width:250px;
-    height: 25px;
+    height: 35px;
     border-radius:10px;
     border: gainsboro solid 1.6px;
     margin-bottom: 10px;   
@@ -87,7 +87,7 @@
     background-color:#e8f6f8;
     border-radius: 15px;
     border: solid 0;
-    width: 180px;
+    width: 260px;
     height: 45px;
     margin-bottom:10px;
 
@@ -118,7 +118,7 @@
     background-color:#e8f6f8;
     border-radius: 15px;
     border: solid 0;
-    width: 180px;
+    width: 260px;
     height: 45px;
     margin-bottom: 30px;
 
@@ -134,14 +134,17 @@
 }
 
 .Facebook-img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
+    margin-left: -15px;
 }
 
 .p-in-button3{
-    font-size: 20px;
-    margin-right:20px;
+    font-size: 19px;
+    margin-left:-10px;
+
+    
 }
 
 
@@ -190,11 +193,11 @@
     width: 40%;
 }
 
-.mobile-text{
-    display: none;
+.desktop-text{
+    display: inline;
 }
 
-.desktop-text{
+.mobile-text{
     display: none;
 }
 
@@ -261,12 +264,12 @@
   }
 
    .desktop-text{
-        display: none;
-    }
+    display: none;
+}
 
-    .mobile-text{
-        display: block; 
-    }
+.mobile-text{
+    display: inline;
+}
 
     .button2,
     .button3{
@@ -302,6 +305,7 @@
 
 
 @media (min-width: 1200px) { /* Extra Large Screens */
+
 
     
 }
