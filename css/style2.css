@@ -40,7 +40,7 @@
     margin-bottom: 10px;   
 }
 
-.a-in-input{
+/* .a-in-input{
     text-decoration: none;
     margin-left: 160px;
     font-size: small;
@@ -48,7 +48,25 @@
 
 .a-in-input:hover{
     color: #000000;
+} */
+
+.a-in-input {
+    text-decoration: none;
+    margin-left: 160px;
+    font-size: small;
+    color: #0000EE;
 }
+
+.a-in-input:visited {
+    color: #0000EE;
+}
+
+.a-in-input:hover {
+    color: #0000EE;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 
 .button1{
     background-color: rgb(35, 35, 35);
@@ -70,6 +88,7 @@
     color: #616060;
     display: flex;
     margin-top: 50px;
+    
 }
 
 .p2-in-p2{
@@ -90,7 +109,6 @@
     width: 260px;
     height: 45px;
     margin-bottom:10px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +117,7 @@
 
 .button2:hover{
     background-color: black;
-    color: #ffffff;
+    color: #ffffff ;
 }
 
 .google-img{
@@ -111,7 +129,7 @@
 
 .p-in-button2{
     font-size:20px;
-    color: #272727;
+    
 }
 
 .button3{
@@ -148,7 +166,7 @@
 }
 
 
-.div-p3{
+ /* .div-p3{
     margin-left: 20px;
 }
 
@@ -158,7 +176,27 @@
 
 .a-in-p3:hover{
     color: gray;
+} */ 
+
+.div-p3 {
+    margin-left: 20px;
 }
+
+.a-in-p3 {
+    text-decoration: none;
+    color: #0000EE;
+}
+
+.a-in-p3:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.a-in-p3:visited {
+    color: #0000EE;
+}
+
+
 
 .div-img{
     background-image: url('../img/صورة\ الورد\ .jpeg');
@@ -294,6 +332,86 @@
 
 @media (min-width: 768px) and (max-width: 991px) { /* Medium Screens */
 
+    .all{
+    width: 100%;
+}
+
+.div-img{
+    float: none;
+    width:100%;
+    height:40%;
+     object-fit: cover;
+    object-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    width: 100%;
+}
+
+  .h1-all{
+    font-weight: bold;
+    margin-left: 5%;
+  }
+
+  .p1-all{
+    font-size:20px;
+    margin-left: 5%;
+  }
+
+  .label-inputs{
+    margin-left: 5%;
+
+  }
+
+  .inputs{
+    width:90%;
+    height: 40px;
+    margin-left: 5%;
+  }
+
+  .a-in-input{
+    float: right;
+    font-size:15px;
+    margin-right:4%;
+    
+  }
+
+  .button1{
+    height:40px;
+    width:90%;
+    margin-left:5%;
+
+  }
+
+  .p2{
+    font-size: larger;
+    margin-left:25%;
+  }
+
+   .desktop-text{
+    display: none;
+}
+
+.mobile-text{
+    display: inline;
+}
+
+    .button2,
+    .button3{
+        float: left;
+        width: 48%;
+    }
+    
+    .button2{
+        margin-right: 4%;
+    }
+    
+    .div-p3{
+        text-align: center;
+        margin-top:75px;
+        font-size: 22px;
+    }
 
 }
 
